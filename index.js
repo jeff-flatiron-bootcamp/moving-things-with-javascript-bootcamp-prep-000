@@ -1,5 +1,6 @@
 const app = "I don't do much."
 
+//<<<<<<< HEAD 
 var dodger = document.getElementById('dodger');
 
 function moveDodgerToLeft()
@@ -43,3 +44,30 @@ document.addEventListener('keydown', function(key)
     }
   }
 );
+//=======
+/*
+function moveDodgerToLeft()
+{
+  $('#dodger').on('keydown', 
+    function(key)
+    {
+      if(key.which === 37)
+      {
+        var leftNumber = this.style.left.replace('px', '')
+        var left = parseInt(leftNumber, 10)
+        
+        if(left > 0)
+        {
+          dodger.style.left = `${left}px`
+        }
+      }
+    }
+  );
+}
+
+$(document).ready(function()
+{
+  moveDodgerToLeft();
+});
+*/
+// >>>>>>> 985641ec924376042389066ea9b32ae0d1d0c462
